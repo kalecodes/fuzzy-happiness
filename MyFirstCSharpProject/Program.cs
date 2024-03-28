@@ -1,17 +1,20 @@
-﻿namespace HelloWorld
+﻿namespace MyFirstCSharpProject
 {
     class Program
     {
         static void Main(string[] args)
         {
-            NumberDateTypes();
-            TextBasedDataTypes();
-            ConvertingTypes();
-            BooleanType();
-            Operators();
-            Remainder();
-            VarKeyword();
-            
+            //NumberDateTypes();
+            //TextBasedDataTypes();
+            //ConvertingTypes();
+            //BooleanType();
+            //Operators();
+            //Remainder();
+            //VarKeyword();
+            //ConstKeyword();
+            //Exercise1();
+            Exercise2();
+
         }
 
         static void NumberDateTypes()
@@ -162,6 +165,52 @@
             Console.WriteLine(bigNumber.GetType());
             var negative = -55.2D;
             Console.WriteLine(negative.GetType());
+        }
+
+        static void ConstKeyword()
+        {
+
+            int vat = 20;
+            vat = 22;
+            Console.WriteLine(vat);
+
+            const int sales = 6;
+            //sales = 8;
+            // reassinging this constant will throw a compile error
+            Console.WriteLine(sales);
+        }
+
+        static void Exercise1()
+        {
+            var firstName = "Kalen";
+            var phone = "1234567891";
+            var age = 27;
+
+            Console.WriteLine(firstName);
+            Console.WriteLine(phone);
+            Console.WriteLine(age);
+
+            Console.WriteLine($"Hi, my name is {firstName}. I am currently {age} years old. My phone number is {phone}");
+        }
+
+        static void Exercise2()
+        {
+            /*
+             * Create & intialize two ints
+             * Make a variable to work out the remainder
+             * Output remainder to the screen
+             * Change the first int variable to another number
+                * and recalculate the remainder
+                * output new remainder to the screen
+            */
+            int num1 = 10;
+            int num2 = 2;
+            int remainder = num1 % num2;
+            Console.WriteLine(remainder);
+
+            num1 = 11;
+            remainder = num1 % num2;
+            Console.WriteLine(remainder);
         }
     }
 }
