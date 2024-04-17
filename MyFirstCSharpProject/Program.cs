@@ -13,7 +13,8 @@
             //VarKeyword();
             //ConstKeyword();
             //Exercise1();
-            Exercise2();
+            //Exercise2();
+            ConsoleInputOutput();
 
         }
 
@@ -211,6 +212,24 @@
             num1 = 11;
             remainder = num1 % num2;
             Console.WriteLine(remainder);
+        }
+
+        static void ConsoleInputOutput()
+        {
+            // Console WriteLine has a terminator at the end, Console Write will output the next function on the same line.
+            Console.WriteLine("Hello my name is Aba!");
+            Console.Write("Enter Your Name: ");
+            string name = Console.ReadLine();
+            Console.Write("Enter your age: ");
+            int age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine();
+            Console.Write("Your name is ");
+            Console.WriteLine(name);
+            Console.Write("Your age is ");
+            Console.WriteLine(age);
+            Console.WriteLine("Your name is " + name + " and your age is " + age + ".");
+            Console.WriteLine($"Your name is {name} and your age is {age}");
+
         }
     }
 }
