@@ -14,7 +14,8 @@
             //ConstKeyword();
             //Exercise1();
             //Exercise2();
-            ConsoleInputOutput();
+            //ConsoleInputOutput();
+            IfStatements();
 
         }
 
@@ -229,7 +230,61 @@
             Console.WriteLine(age);
             Console.WriteLine("Your name is " + name + " and your age is " + age + ".");
             Console.WriteLine($"Your name is {name} and your age is {age}");
+        }
 
+        static void IfStatements()
+        {
+            //Console.Write("Enter your name: ");
+            //string name = Console.ReadLine();
+
+            //Console.Write("Enter your age: ");
+            //int age = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine();
+            //Console.WriteLine("Your name is " + name + " and your age is " + age);
+
+            //if (age < 0 || age > 150)
+            //{
+            //    Console.WriteLine("Invalid Age");
+            //}
+            //else
+            //{
+            //    if (age >= 18 && age < 21)
+            //    {
+            //        Console.WriteLine("You are an adult.");
+            //    }
+            //    else if (age >= 21)
+            //    {
+            //        Console.WriteLine("You are and adult old enough to drink.");
+            //    }
+            //    else if (age >= 13)
+            //    {
+            //        Console.WriteLine("Your are a teenager.");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("You are a child.");
+            //    }
+            //}
+
+            Console.Write("Enter the first number: ");
+            int numberA = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the second number: ");
+            int numberB = Convert.ToInt32(Console.ReadLine());
+
+            int actualAnswer = numberA * numberB;
+
+            Console.Write($"Value of {numberA} x {numberB}: ");
+            int answerInput = Convert.ToInt32(Console.ReadLine());
+
+            if  (answerInput ==  actualAnswer)
+            {
+                Console.WriteLine("Correct. Well Done!");
+            }
+            else
+            {
+                Console.WriteLine("Sorry, that is incorrect.");
+            }
         }
     }
 }
