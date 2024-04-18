@@ -16,7 +16,8 @@
             //Exercise2();
             //ConsoleInputOutput();
             //IfStatements();
-            SwitchStatements();
+            //SwitchStatements();
+            Loops();
 
         }
 
@@ -315,6 +316,70 @@
             }
 
             Console.WriteLine(weekday);
+        }
+
+        static void Loops()
+        {
+            // for loops
+            //Console.WriteLine("What message do you want to repeat?");
+            //string message = Console.ReadLine();
+            //Console.WriteLine("How many times do you want to say hi?");
+            //int loopCounter = Convert.ToInt32(Console.ReadLine());
+            //if (loopCounter <= 0)
+            //{
+            //    Console.WriteLine("Please enter a number greater than 0");
+            //} else
+            //{
+            //    for (int i = 0; i < loopCounter; i++)
+            //    {
+            //        Console.WriteLine(message);
+            //    }
+            //}
+
+            // while loops
+
+            //int i = 0;
+            //while (i < 10)
+            //{
+            //    Console.WriteLine(i);
+            //    i++;
+            //}
+
+            Console.Write("Enter the first number: ");
+            int numberA = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the second number: ");
+            int numberB = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine();
+
+            int actualAnswer = numberA * numberB;
+            int answerInput = 0;
+
+            Console.WriteLine($"What is the value of {numberA} x {numberB}?");
+
+            //while (answerInput != actualAnswer)
+            //{
+            //    // checks the condition first, then executes
+            //    answerInput = Convert.ToInt32(Console.ReadLine());
+            //    if (answerInput != actualAnswer)
+            //    {
+            //        Console.WriteLine("Sorry, that is incorrect. Please try again.");
+            //        Console.WriteLine();
+            //    }
+            //}
+
+            do
+            {
+                // completes the action first, then checks the condition
+                answerInput = Convert.ToInt32(Console.ReadLine());
+                if (answerInput != actualAnswer)
+                {
+                    Console.WriteLine("Sorry, that is incorrect. Please try again.");
+                    Console.WriteLine();
+                }
+            } while (answerInput != actualAnswer);
+
+            Console.WriteLine("Correct, well done!");
         }
     }
 }
