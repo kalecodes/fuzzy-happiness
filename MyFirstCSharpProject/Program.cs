@@ -15,7 +15,8 @@
             //Exercise1();
             //Exercise2();
             //ConsoleInputOutput();
-            IfStatements();
+            //IfStatements();
+            SwitchStatements();
 
         }
 
@@ -285,6 +286,35 @@
             {
                 Console.WriteLine("Sorry, that is incorrect.");
             }
+        }
+
+        static void SwitchStatements()
+        {
+            Console.WriteLine("Enter a day of the week: ");
+            int day = Convert.ToInt32(Console.ReadLine());
+
+            string weekday;
+            switch (day)
+            {
+                case 1: weekday = "Monday";
+                    break;
+                case 2: weekday = "Tuesday";
+                    break;
+                case 3: weekday = "Wednesday";
+                    break;
+                case 4: weekday = "Thursday";
+                    break;
+                case 5: weekday = "Friday";
+                    break;
+                case 6: weekday = "Saturday";
+                    break;
+                case 7: weekday = "Sunday";
+                    break;
+                default: weekday = "Invalid. Please enter a number between 1 and 7.";
+                    break;
+            }
+
+            Console.WriteLine(weekday);
         }
     }
 }
